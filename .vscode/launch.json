@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python: Default Run",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--dbpath", "/mnt/hd-storage/IntelImageClassification",
+                "--clffname", "clean_sclf.pt",
+            ]
+        },
+        {
+            "name": "Python: Noise Profile",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--db_path", "/mnt/hd-storage/IntelImageClassification",
+                "--clf_fname", "clean_sclf.pt",
+                "--noise_config_fname", "noise.json"
+            ]
+        }
+    ]
+}
